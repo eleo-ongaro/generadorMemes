@@ -6,6 +6,7 @@
     <title>Editor de Memes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/perroAnsioso2.png">
+    <script src="https://kit.fontawesome.com/d2f0778e32.js" crossorigin="anonymous"></script>
 </head>
 <body>
          <!-- // HEADER // -->
@@ -28,12 +29,14 @@
     </main>
 
     <aside class="asideImg">
+        <h2>IMAGEN</h2>
         <div>
-            <p>URL</p>
+            <h4>URL</h4>
             <Input type="url"  placeholder="Ingresá la dirección web de la imágen que querés usar" required></Input>
         </div>
 
         <div>
+            <h5>FONDO</h5>
             <Input type="color"></Input>
                 
             <select>
@@ -46,29 +49,111 @@
             </select>
         </div>
 
-        <p>FILTROS</p>
+        <h4>FILTROS</h4>
 
         <div class="filterBox">
             <div class="rangeBox">
+                <h5>BRILLO</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>OPACIDAD</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>CONTRASTE</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>DESENFOQUE</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>ESCALA DE GRISES</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>SEPIA</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>HUE</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>SATURADO</h5>
                 <INPUT type="range"></INPUT>
+
+                <h5>NEGATIVO</h5>
                 <INPUT type="range"></INPUT>
             </div>
         </div>
-
+        <button>Reestablecer filtros</button>
     </aside>
 
     <aside class="asideTxt">
+        <h2>TEXTO</h2>
         <div>
-            <p>SUPERIOR</p>
-            <Input type="text"  placeholder="Ingresá el texto que querés usar" required></Input>
-            <input type="checkbox">sin texto superior 
+            <h5>SUPERIOR</h5>
+            <Input type="text"  placeholder="TOP TEXT" ></Input>
+            <input type="checkbox">Sin texto superior 
+        </div>
+
+        <div>
+            <h5>INFERIOR</h5>
+            <Input type="text"  placeholder="BOTTOM TEXT" ></Input>
+            <input type="checkbox">Sin texto inferior 
+        </div>
+
+        <div>
+            <h5>FUENTE</h5>
+            <select>
+                <option value="opcion1">Impact</option>
+                <option value="opcion2">Arial</option>
+                <option value="opcion3">Arial Black</option>
+                <option value="opcion4">American Typewriter</option>
+                <option value="opcion5">Andale Mono</option>
+                <option value="opcion6">Comic Sans MS</option>
+                <option value="opcion7">Helvetica</option>
+                <option value="opcion8">Verdana</option>
+                <option value="opcion9">Times New Roman</option>
+            </select>
+
+            <input type="number">
+            <button><i class="fa-solid fa-align-left"></i></button>
+
+            <button><i class="fa-solid fa-align-center"></i></button>
+
+            <button><i class="fa-solid fa-align-left"></i></button>
+        </div>
+
+        <div>
+            <h5>COLOR</h5>
+            <Input type="color"></Input>
+        </div>
+
+        <div>
+            <h5>FONDO</h5>
+            <Input type="color"></Input>
+        </div>
+
+        <input type="checkbox">Fondo transparente 
+
+        <div>
+            <h5>CONTORNO</h5>
+            <button>Ninguno</button>
+            <button>Claro</button>
+            <button>Obscuro</button>
+        </div>
+
+        <div>
+            <h5>ESPACIADO</h5>
+            <input type="number">
+        </div>
+
+        <div>
+            <h5>INTERLINEADO</h5>
+            <select>
+                <option value="opcion1">0.8</option>
+                <option value="opcion2">1</option>
+                <option value="opcion3">1.2</option>
+                <option value="opcion4">1.5</option>
+                <option value="opcion5">2</option>
+                <option value="opcion6">2.5</option>
+            </section>
         </div>
 
     </aside>
