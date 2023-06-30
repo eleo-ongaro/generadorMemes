@@ -15,6 +15,7 @@
             <span>Imagen</span>
             <span>Texto</span>
             <span>Modo obscuro</span>
+            <span>Modo claro</span>
         </div>
     </header>
 
@@ -26,6 +27,51 @@
         </div>
     </main>
 
+    <aside class="asideImg">
+        <div>
+            <p>URL</p>
+            <Input type="url"  placeholder="Ingresá la dirección web de la imágen que querés usar" required></Input>
+        </div>
+
+        <div>
+            <Input type="color"></Input>
+                
+            <select>
+                <option value="opcion1">Ninguno</option>
+                <option value="opcion2">Aclarar</option>
+                <option value="opcion3">Obscurecer</option>
+                <option value="opcion4">Diferencia</option>
+                <option value="opcion5">Luminosidad</option>
+                <option value="opcion6">Multiplicar</option>
+            </select>
+        </div>
+
+        <p>FILTROS</p>
+
+        <div class="filterBox">
+            <div class="rangeBox">
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+                <INPUT type="range"></INPUT>
+            </div>
+        </div>
+
+    </aside>
+
+    <aside class="asideTxt">
+        <div>
+            <p>SUPERIOR</p>
+            <Input type="text"  placeholder="Ingresá el texto que querés usar" required></Input>
+            <input type="checkbox">sin texto superior 
+        </div>
+
+    </aside>
 
     
 

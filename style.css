@@ -73,3 +73,45 @@ span {
     align-items: center;
     justify-content: center;
 }
+
+aside{
+    width: 15%;
+}
+.asideImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    border: 5px solid rgb(225, 245, 6);
+    text-align: center;
+    padding: 3px;
+}
+
+.filterBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rangeBox{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.asideTxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(78, 72, 72);
+    border: 5px solid rgb(6, 0, 11);
+    text-align: center;
+    padding: 3px;
+}
