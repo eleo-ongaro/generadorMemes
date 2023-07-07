@@ -119,6 +119,11 @@ span {
 
 aside{
     width: 15%;
+    font-size: 15px;
+}    
+
+h4, h5{
+    margin: 5px;
 }
 .asideImg{
     position: absolute;
@@ -134,13 +139,15 @@ aside{
     background-color: #252935;
 }
 
-input, select {
+input, select{
     background-color: #393e49;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     padding: 5px;
-    
+    margin: 5px;
+    border-radius: 5%;
+    border: none;
 }
 
 .filterBox{
