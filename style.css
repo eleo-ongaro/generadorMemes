@@ -1,76 +1,119 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
-    background-color: aquamarine;
-    border: 5px solid crimson;
-    text-align: center;
-    margin: 0;
+    background-color: #191e2b;
+    /* border: 5px solid crimson; */
+    margin: 0px;
     height: 20%;
+    display: flex;
+    padding-bottom: 15px;
+    font-c
 }
 
+img{
+    height: 50%;
+    padding-top: 5px;
+}
+
+h1{
+    margin: 0;
+    display: inline;
+    padding: 3px;
+    color: #fbffff;
+}
 main {
     display: flex;
+    flex-direction: column;
     height: 80%;
-    justify-content: center;
+    width: 100%;
     align-items: center;
+    background-color: blue;
+    /* border: 5px solid rgb(218, 242, 7); */
+    background-color: #30343f;
 }
 
 .caja-header {
-    background-color: rgb(165, 127, 255);
-    border: 5px solid rgb(9, 0, 2);
-    text-align: center;
-    padding: 5px;
-    
+    /* background-color: rgb(165, 127, 255); */
+    /* border: 5px solid rgb(9, 0, 2); */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-items: center; 
+    align-items: center;
+    padding-bottom: 15px;
 }
+
+.options{
+    padding: 5px;
+}
+
+/* .fa-solid, .fa-regular {
+    COMO LOGRAR UN ESPACIO ENTRE EL ICONO Y EL TEXTO?
+} */
 
 span {
     padding: 5px;
-    margin: 0 30px;
-    
+    margin: 0 15px;
+    color: #fbffff;
 }
 
 .recuadroPadre {
     background-color: rgb(220, 20, 147);
-    border: 5px solid black;
+    /* border: 5px solid black; */
     position: relative;
-    margin: 0 auto;
-    width: 40%;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 30%;
+    height: 80%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items:inherit;
+    
 }
 
 .top-text {
-    background-color: rgb(236, 248, 10);
-    border: 5px solid rgb(20, 220, 43);
-    height: 10%;
+    background-color: white;
+    color: black;
+    /* border: 5px solid rgb(20, 220, 43); */
+    width: 100%;
+    height: 20%;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:center; 
+    margin: 0;    
+    order: 0;
+}
+
+.imgMeme {
+    background-color: #000000;
+    
+    /* border: 5px solid cornsilk; */
+    order: 1;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 60%;
     margin: 0;
+    padding: 0px;
 }
 
 .bottom-text {
-    background-color: rgb(99, 27, 16);
-    border: 5px solid rgb(70, 20, 220);
-    
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    background-color: white;
+    color: black;
+    /* border: 5px solid rgb(70, 20, 220); */
     width: 100%;
-    height: 10%;
+    height: 20%;
     display: flex;
+    margin: 0%;
     align-items: center;
     justify-content: center;
+    order: 2;
+    
 }
 
 aside{
@@ -87,6 +130,7 @@ aside{
     border: 5px solid rgb(225, 245, 6);
     text-align: center;
     padding: 3px;
+    overflow: scroll;
 }
 
 .filterBox{
@@ -104,6 +148,7 @@ aside{
 
 .asideTxt{
     position: absolute;
+    overflow: scroll;
     top: 0;
     left: 0;
     height: 100%;
@@ -113,4 +158,13 @@ aside{
     border: 5px solid rgb(6, 0, 11);
     text-align: center;
     padding: 3px;
+}
+
+.botonDescarga{
+    background-color: #3a7d33;
+    color: white;
+    /* border: 5px solid rgb(225, 245, 6); */
+    margin-top: 1%;
+    padding: 8px;
+    
 }

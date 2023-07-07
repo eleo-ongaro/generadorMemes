@@ -11,30 +11,40 @@
 <body>
          <!-- // HEADER // -->
     <header>
-        <h1>Generador de Memes</h1>
         <div class="caja-header">
-            <span>Imagen</span>
-            <span>Texto</span>
-            <span>Modo obscuro</span>
-            <span>Modo claro</span>
+            <img src="./assets/perroAnsioso3.png" alt="famoso perrito memero">
+            <h1>Generador de Memes</h1>
+                <div class="options">
+                    <span><i class="fa-solid fa-image"></i>Imagen</span>
+                    <span><i class="fa-solid fa-font"></i>Texto</span>
+                    <span><i class="fa-solid fa-moon"></i> Modo obscuro</span>
+                    <span><i class="fa-regular fa-sun"></i> Modo claro</span>
+                </div>
         </div>
     </header>
 
     <main>
         <!-- CUADRADO TOTAL, Q ADEMAS TIENE LAS CAJAS DE TEXTO, Y LO DEL MEDIO SERIA EL ESPACIO PARA LA IMAGEN -->
         <div class="recuadroPadre">
-            <div class="top-text">TOP TEXT</div>
-            <div class="bottom-text">BOTOM TEXT</div>
-        </div>
-    </main>
+            <p class="top-text">TOP TEXT</p>
+            <div class="imgMeme"> 
 
+            </div>
+            <p class="bottom-text">BOTOM TEXT</p>
+        </div>
+    
+        <button class="botonDescarga"><i class="fa-solid fa-download"> Descargar  meme</i></button>
+
+    </main>
+    
+        <!-- ASIDE IMAGEN -->
     <aside class="asideImg">
         <h2>IMAGEN</h2>
         <div>
             <h4>URL</h4>
             <Input type="url"  placeholder="Ingresá la dirección web de la imágen que querés usar" required></Input>
         </div>
-
+                        <!-- COLOR DE FONDO -->
         <div>
             <h5>FONDO</h5>
             <Input type="color"></Input>
@@ -48,7 +58,7 @@
                 <option value="opcion6">Multiplicar</option>
             </select>
         </div>
-
+    <!-- FILTROS -->
         <h4>FILTROS</h4>
 
         <div class="filterBox">
@@ -81,9 +91,10 @@
                 <INPUT type="range"></INPUT>
             </div>
         </div>
-        <button>Reestablecer filtros</button>
-    </aside>
+        <button>Reestablecer filtros</button> 
+    </aside> -->
 
+        <!-- ASIDE TEXT -->
     <aside class="asideTxt">
         <h2>TEXTO</h2>
         <div>
@@ -154,10 +165,11 @@
                 <option value="opcion5">2</option>
                 <option value="opcion6">2.5</option>
             </section>
-        </div>
+        </div> 
 
     </aside>
 
+    
     
 
     <script src="main.js"></script>
