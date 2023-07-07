@@ -122,8 +122,13 @@ aside{
     font-size: 15px;
 }    
 
+h2{
+text-align: center;
+}
+
 h4, h5{
     margin: 5px;
+    text-align: left;
 }
 .asideImg{
     position: absolute;
@@ -132,7 +137,7 @@ h4, h5{
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     padding: 3px;
     overflow: scroll;
     color: white;
@@ -151,17 +156,13 @@ input, select{
 }
 
 .filterBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* justify-content: left; */
 }
 
-.rangeBox{
-    display: flex;
-    flex-direction: column;
+.boxRange{
+    /* text-align: left; */
+    /* justify-content: left; */
 }
-
-
 
 .asideTxt{
     position: absolute;
@@ -171,7 +172,6 @@ input, select{
     height: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 3px;
     background-color: #252935;
     color: white;
@@ -181,6 +181,7 @@ input, select{
 .botonDescarga{
     background-color: #3a7d33;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: none; 
     border-radius: 3%;
     margin-top: 1%;
