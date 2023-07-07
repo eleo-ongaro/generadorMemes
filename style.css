@@ -117,17 +117,13 @@ span {
     
 }
 
-aside{
-    width: 15%;
-    font-size: 15px;
-}    
-
 h2{
 text-align: center;
 }
 
-h4, h5{
-    margin: 5px;
+h3, h4, h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
 }
 .asideImg{
@@ -135,22 +131,27 @@ h4, h5{
     top: 0;
     right: 0;
     height: 100%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 3px;
+    padding-left: 20px;
     overflow: scroll;
     color: white;
     background-color: #252935;
 }
+
+label{
+    display: block;
+    margin: 5px;
+} 
 
 input, select{
     background-color: #393e49;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
     border-radius: 5%;
     border: none;
 }
@@ -160,8 +161,8 @@ input, select{
 }
 
 .boxRange{
-    /* text-align: left; */
-    /* justify-content: left; */
+    align-items: center;
+    justify-content: center;
 }
 
 .asideTxt{
@@ -170,12 +171,13 @@ input, select{
     top: 0;
     left: 0;
     height: 100%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     padding: 3px;
     background-color: #252935;
     color: white;
-    
+    margin-left: 5px;
 }
 
 .botonDescarga{
