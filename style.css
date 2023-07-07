@@ -3,6 +3,7 @@ html, body {
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -12,7 +13,7 @@ header {
     height: 20%;
     display: flex;
     padding-bottom: 15px;
-    font-c
+    
 }
 
 img{
@@ -126,11 +127,20 @@ aside{
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
-    border: 5px solid rgb(225, 245, 6);
     text-align: center;
     padding: 3px;
     overflow: scroll;
+    color: white;
+    background-color: #252935;
+}
+
+input, select {
+    background-color: #393e49;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+    
 }
 
 .filterBox{
@@ -154,16 +164,18 @@ aside{
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:  rgb(78, 72, 72);
-    border: 5px solid rgb(6, 0, 11);
     text-align: center;
     padding: 3px;
+    background-color: #252935;
+    color: white;
+    
 }
 
 .botonDescarga{
     background-color: #3a7d33;
     color: white;
-    /* border: 5px solid rgb(225, 245, 6); */
+    border: none; 
+    border-radius: 3%;
     margin-top: 1%;
     padding: 8px;
     
