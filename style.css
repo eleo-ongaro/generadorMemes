@@ -164,6 +164,7 @@ input, select{
     text-align: center;
     font-size: 11px;
     width: 95%;
+    height: 25%;
     border-radius: 5%;
     border: none;
     padding: 2%;
@@ -322,12 +323,14 @@ input[type=range]:focus::-ms-fill-upper {
 .btnReset{
     background-color: #393e49;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: none; 
     border-radius: 3%;
-    margin-top: 1%;
-    padding: 8px;
+    border-radius: 5%;
+    margin:0%;
     width: fit-content;
+    padding: 3%;
+    
 }
 
 .asideTxt{
@@ -358,19 +361,27 @@ input[type=checkbox]{
 
 .numberContainer{
     margin-right: 1%;
-    width: 65%;
+    width: 50%;
 }
 
 .numberNbtn{
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 43vh;
+    margin: 0;
+}
+
+.iconText{
+    display: flex;
+    margin-bottom: 1%;
 }
 
 .btnText{
-    display: flex;
-    flex-direction: row;
-    width: 20%;
+    border-radius: 7%;
+    padding: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 10%;
 }
 
 .colorYfondo{
@@ -378,35 +389,32 @@ input[type=checkbox]{
     flex-direction: row;
 }
 
-.colorContainer{
+/* .colorContainer{
     
 }
 
 .fondoCont{
 
-}
+} */
 
-button, .btnText{
-    margin-right: 7%;
-    height: 4vh;
-    border-radius: 7%;
-}
+
 
 .botonDescarga{
     background-color: #3a7d33;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: none; 
-    border-radius: 3%;
+    border-radius: 5%;
     margin-top: 1%;
-    padding: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 6%;
     
 }
 
 button{
-    padding: 13%;
-
     background-color:#393e49;
     color: #FFFFFF;
     border-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
