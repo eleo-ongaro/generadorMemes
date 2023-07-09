@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./assets/perroAnsioso2.png">
     <script src="https://kit.fontawesome.com/d2f0778e32.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
          <!-- // HEADER // -->
     <header>
         <div class="caja-header">
-            <img src="./assets/perroAnsioso3.png" alt="famoso perrito memero">
+            <div class="titleMeme">
+                <img src="./assets/BusinessCat2.png" alt="perro ansioso">
             <h1>Generador de Memes</h1>
-                <div class="options">
-                    <span><i class="fa-solid fa-image"></i>Imagen</span>
-                    <span><i class="fa-solid fa-font"></i>Texto</span>
-                    <span><i class="fa-solid fa-moon"></i> Modo obscuro</span>
-                    <span><i class="fa-regular fa-sun"></i> Modo claro</span>
-                </div>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-image"></i>Imagen</span>
+                <span><i class="fa-solid fa-font"></i>Texto</span>
+                <span><i class="fa-solid fa-moon"></i> Modo obscuro</span>
+                <span><i class="fa-regular fa-sun"></i> Modo claro</span>
+            </div>
         </div>
     </header>
 
@@ -46,19 +53,24 @@
             <h3>URL</h3>
             <Input type="url" required></Input>
         </div>
-                        <!-- COLOR DE FONDO -->
+        <!-- COLOR DE FONDO -->
         <div>
             <h3>FONDO</h3>
-            <Input type="color"></Input>
-                
-            <select>
-                <option value="opcion1">Ninguno</option>
-                <option value="opcion2">Aclarar</option>
-                <option value="opcion3">Obscurecer</option>
-                <option value="opcion4">Diferencia</option>
-                <option value="opcion5">Luminosidad</option>
-                <option value="opcion6">Multiplicar</option>
-            </select>
+            <div class="fondoAside">
+                <div class="nameColor">
+                    <Input type="color" class="circleColor"></Input>
+                    <span class="spanColor">#ffff</span>
+                </div>
+        
+                <select>
+                    <option value="opcion1">Ninguno</option>
+                    <option value="opcion2">Aclarar</option>
+                    <option value="opcion3">Obscurecer</option>
+                    <option value="opcion4">Diferencia</option>
+                    <option value="opcion5">Luminosidad</option>
+                    <option value="opcion6">Multiplicar</option>
+                </select>
+            </div>
         </div>
     <!-- FILTROS -->
         
@@ -80,7 +92,7 @@
             </div>
             
             <div class="boxRange">
-                <label for="opFilter">DESENFOQE</label>
+                <label for="opFilter">DESENFOQUE</label>
                 <INPUT type="range" min="0" max="10" value="0" step="0.1">
             </div>
             
@@ -118,13 +130,13 @@
         <div>
             <h3>SUPERIOR</h3>
             <Input type="text"  placeholder="TOP TEXT" ></Input>
-            <input type="checkbox">Sin texto superior 
+            <p><input type="checkbox">Sin texto superior</p> 
         </div>
 
         <div>
             <h3>INFERIOR</h3>
             <Input type="text"  placeholder="BOTTOM TEXT" ></Input>
-            <input type="checkbox">Sin texto inferior 
+            <p><input type="checkbox">Sin texto inferior</p> 
         </div>
 
         <div>
