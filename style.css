@@ -8,7 +8,6 @@ html, body {
 
 header {
     background-color: #191e2b;
-    /* border: 5px solid crimson; */
     margin: 0px;
     height: 20%;
     display: flex;
@@ -33,8 +32,6 @@ main {
     height: 80%;
     width: 100%;
     align-items: center;
-    background-color: blue;
-    /* border: 5px solid rgb(218, 242, 7); */
     background-color: #30343f;
 }
 
@@ -165,6 +162,17 @@ input, select{
     justify-content: center;
 }
 
+.btnReset{
+    background-color: #393e49;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none; 
+    border-radius: 3%;
+    margin-top: 1%;
+    padding: 8px;
+    width: fit-content;
+}
+
 .asideTxt{
     position: absolute;
     overflow: scroll;
@@ -189,4 +197,8 @@ input, select{
     margin-top: 1%;
     padding: 8px;
     
+}
+
+button{
+    width: fit-content;
 }
