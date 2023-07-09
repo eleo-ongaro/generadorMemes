@@ -47,81 +47,88 @@
     </main>
     
         <!-- ASIDE IMAGEN -->
-    <aside class="asideImg">
-        <h2>IMAGEN</h2>
-        <div>
-            <h3>URL</h3>
-            <Input type="url" required></Input>
-        </div>
-        <!-- COLOR DE FONDO -->
-        <div>
-            <h3>FONDO</h3>
-            <div class="fondoAside">
-                <div class="nameColor">
-                    <Input type="color" class="circleColor"></Input>
-                    <span class="spanColor">#ffff</span>
+    <aside>
+        <div class="asideImg">
+            <h2>IMAGEN</h2>
+            <div>
+                <h3>URL</h3>
+                <Input type="url" required></Input>
+            </div>
+            <!-- COLOR DE FONDO -->
+            <div>
+                <h3>FONDO</h3>
+                <div class="fondoContainer">
+                    <div class="nameColor">
+                        <div class="circleColor">
+                            <Input type="color" ></Input>
+                        </div>
+                        <div class="spanContainer">
+                            <span class="spanColor">#ffff</span>
+                        </div>
+                    </div>
+                    <div class="fondoOptions">
+                        <select class="optionsDesplegable">
+                            <option value="opcion1">Ninguno</option>
+                            <option value="opcion2">Aclarar</option>
+                            <option value="opcion3">Obscurecer</option>
+                            <option value="opcion4">Diferencia</option>
+                            <option value="opcion5">Luminosidad</option>
+                            <option value="opcion6">Multiplicar</option>
+                        </select>
+                    </div>
                 </div>
-        
-                <select>
-                    <option value="opcion1">Ninguno</option>
-                    <option value="opcion2">Aclarar</option>
-                    <option value="opcion3">Obscurecer</option>
-                    <option value="opcion4">Diferencia</option>
-                    <option value="opcion5">Luminosidad</option>
-                    <option value="opcion6">Multiplicar</option>
-                </select>
             </div>
+            <!-- FILTROS -->
+    
+            <div class="filterBox">
+                <h3>FILTROS</h3>
+                <div class="boxRange">
+                    <label for="opFilter">BRILLO</label>
+                    <INPUT type="range" min="0" max="1" value="1" step="0.1">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">OPACIDAD</label>
+                    <INPUT type="range" min="0" max="1" value="1" step="0.1">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">CONTRASTE</label>
+                    <INPUT type="range" min="100" max="1000" value="100">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">DESENFOQUE</label>
+                    <INPUT type="range" min="0" max="10" value="0" step="0.1">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">ESCALADE GRISES</label>
+                    <INPUT type="range" min="0" max="100" value="0">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">SEPIA</label>
+                    <INPUT type="range" min="0" max="100" value="0">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">HUE</label>
+                    <INPUT type="range" min="0" max="360" value="0">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">SATURACION</label>
+                    <INPUT type="range" min="100" max="1000" value="100" step="10">
+                </div>
+    
+                <div class="boxRange">
+                    <label for="opFilter">NEGATIVO</label>
+                    <INPUT type="range" min="0" max="1" value="0" step="0.1">
+                </div>
+            </div>
+            <button class="btnReset">Reestablecer filtros</button>
         </div>
-    <!-- FILTROS -->
-        
-        <div class="filterBox">
-            <h3>FILTROS</h3>
-            <div class="boxRange">
-                <label for="opFilter">BRILLO</label>
-                <INPUT type="range" min="0" max="1" value="1" step="0.1">
-            </div>
-
-            <div class="boxRange">
-                <label for="opFilter">OPACIDAD</label>
-                <INPUT type="range" min="0" max="1" value="1" step="0.1">
-            </div>
-
-            <div class="boxRange">
-                <label for="opFilter">CONTRASTE</label>
-                <INPUT type="range" min="100" max="1000" value="100">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">DESENFOQUE</label>
-                <INPUT type="range" min="0" max="10" value="0" step="0.1">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">ESCALADE GRISES</label>
-                <INPUT type="range" min="0" max="100" value="0">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">SEPIA</label>
-                <INPUT type="range" min="0" max="100" value="0">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">HUE</label>
-                <INPUT type="range" min="0" max="360" value="0">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">SATURACION</label>
-                <INPUT type="range" min="100" max="1000" value="100" step="10">
-            </div>
-            
-            <div class="boxRange">
-                <label for="opFilter">NEGATIVO</label>
-                <INPUT type="range" min="0" max="1" value="0" step="0.1">
-            </div>
-        </div>
-        <button class="btnReset">Reestablecer filtros</button> 
     </aside>
 
         <!-- ASIDE TEXT -->

@@ -127,34 +127,43 @@ h3, h4, h5{
     text-align: left;
     
 }
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
 .asideImg{
     position: absolute;
+    overflow-x: scroll;
     top: 0;
     right: 0;
+    overflow-x: scroll;
+    width: 20%;
     height: 100%;
-    width: 15%;
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 3px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 1%;
+    padding-bottom: 1%;
     overflow: scroll;
     color: white;
-    background-color: #252935;
+    background-color: #252935;    
 }
 
 label{
     display: block;
-    margin: 5px;
+    margin: 0;
 } 
 
 input, select{
-    background-color: #393e49;
+    background-color: #393e49; 
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 11px;
-    width: 27vh;
+    width: 95%;
     border-radius: 5%;
     border: none;
     padding: 2%;
@@ -162,50 +171,152 @@ input, select{
     margin-bottom: 3%;
 }
 
-.fondoAside{
+.fondoContainer{
     display: flex;
+    align-items: center;
+    
 }
 
 .nameColor{
-    background-color: #0c52e8;
-    width: fit-content;
-    border-radius: 5%;
+    background-color: #393e49;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.spanColor{
-    background-color: red;
-    margin-top:7%;
-    padding: 2px;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    border-radius: 7%;
     
-
 }
+
+.circleColor, .spanContainer, .spanColor{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 
 input[type="color"],
 input[type="color"]::-webkit-color-swatch-wrapper,
 input[type="color"]::-webkit-color-swatch {
-    width: 18px;
     height: 18px;
     min-width: 18px;
     border-radius: 50%;
-    background-color: transparent;
-    margin-top: 2px;
-    margin-bottom: 8px;
-    
+    align-items: center;
 }
 
-.filterBox{
-    /* justify-content: left; */
+.fondoOptions{
+    background-color: 393e49;
+    display: block;
+    margin-left: 3%;
+}
+.optionsDesplegable{
+    padding: 9%;
 }
 
 .boxRange{
     align-items: center;
     justify-content: center;
+}
+
+input[type=range] {
+    height: 27px;
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5A5D68;
+    border-radius: 4px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 3px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #5A5D68;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5A5D68;
+    border-radius: 4px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 3px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #5A5D68;
+    border: 0px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #5A5D68;
+    border: 0px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px #000000;
+}
+
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 3px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #5A5D68;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #5A5D68;
 }
 
 .btnReset{
@@ -221,17 +332,18 @@ input[type="color"]::-webkit-color-swatch {
 
 .asideTxt{
     position: absolute;
-    overflow: scroll;
+    overflow-x: scroll;
     top: 0;
     left: 0;
     height: 100%;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    padding: 3px;
+    padding-left: 15px;
+    padding-right: 1%;
     background-color: #252935;
     color: white;
-    margin-left: 5px;
+    padding-bottom: 1%;
 }
 
 .botonDescarga{
