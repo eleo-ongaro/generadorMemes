@@ -346,6 +346,24 @@ input[type=range]:focus::-ms-fill-upper {
     padding-bottom: 1%;
 }
 
+.checkContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=checkbox]{
+    width: fit-content;
+    height: fit-content;
+}
+
+.btnText{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
 .botonDescarga{
     background-color: #3a7d33;
     color: white;

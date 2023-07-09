@@ -132,18 +132,29 @@
     </aside>
 
         <!-- ASIDE TEXT -->
-    <aside class="asideTxt">
+    <aside>
+        <div class="asideTxt">
         <h2>TEXTO</h2>
+        <h3>SUPERIOR</h3>
+
         <div>
-            <h3>SUPERIOR</h3>
+
             <Input type="text"  placeholder="TOP TEXT" ></Input>
-            <p><input type="checkbox">Sin texto superior</p> 
+
+            <div class="checkContainer">
+                <input type="checkbox">
+                <span>Sin texto superior</span> 
+            </div>
+
         </div>
 
         <div>
             <h3>INFERIOR</h3>
-            <Input type="text"  placeholder="BOTTOM TEXT" ></Input>
-            <p><input type="checkbox">Sin texto inferior</p> 
+            <Input type="text" placeholder="BOTTOM TEXT"></Input>
+            <div class="checkContainer">
+                <input type="checkbox">
+                <span>Sin texto inferior </span>
+            </div>
         </div>
 
         <div>
@@ -161,11 +172,15 @@
             </select>
 
             <input type="number">
-            <button><i class="fa-solid fa-align-left"></i></button>
 
-            <button><i class="fa-solid fa-align-center"></i></button>
+            <div class="btnText">
+                <button><i class="fa-solid fa-align-left"></i></button>
 
-            <button><i class="fa-solid fa-align-right"></i></button>
+                <button><i class="fa-solid fa-align-center"></i></button>
+
+                <button><i class="fa-solid fa-align-right"></i></button>
+            </div>
+
         </div>
 
         <div>
@@ -178,7 +193,10 @@
             <Input type="color"></Input>
         </div>
 
-        <input type="checkbox">Fondo transparente 
+        <div class="checkContainer">
+            <input type="checkbox">
+            <span>Fondo transparente</span> 
+        </div>
 
         <div>
             <h3>CONTORNO</h3>
@@ -203,7 +221,7 @@
                 <option value="opcion6">2.5</option>
             </section>
         </div> 
-
+    </div>
     </aside>
 
     
