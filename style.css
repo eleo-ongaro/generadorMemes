@@ -356,12 +356,40 @@ input[type=checkbox]{
     height: fit-content;
 }
 
+.numberContainer{
+    margin-right: 1%;
+    width: 65%;
+}
+
+.numberNbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btnText{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    justify-content: space-evenly;
-    align-items: stretch;
+    width: 20%;
+}
+
+.colorYfondo{
+    display: flex;
+    flex-direction: row;
+}
+
+.colorContainer{
+    
+}
+
+.fondoCont{
+
+}
+
+button, .btnText{
+    margin-right: 7%;
+    height: 4vh;
+    border-radius: 7%;
 }
 
 .botonDescarga{
@@ -376,5 +404,9 @@ input[type=checkbox]{
 }
 
 button{
-    width: fit-content;
+    padding: 13%;
+
+    background-color:#393e49;
+    color: #FFFFFF;
+    border-style: none;
 }
