@@ -35,6 +35,46 @@ main {
     
 }
 
+/* ------------------INICIO SCROLLBAR------------------  */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #5A5D68 #E6E6E6;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 9px;
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #E6E6E6;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #5A5D68;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #32343A;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #121315;
+}
+/* ------------------FIN SCROLLBAR------------------  */
+
 .caja-header {
     display: flex;
     flex-direction: column;
@@ -164,7 +204,7 @@ input, select{
     text-align: center;
     font-size: 11px;
     width: 95%;
-    height: 25%;
+    height: 20%;
     border-radius: 5%;
     border: none;
     padding: 2%;
@@ -387,6 +427,7 @@ input[type=checkbox]{
 .colorYfondo{
     display: flex;
     flex-direction: row;
+
 }
 
 /* .colorContainer{
