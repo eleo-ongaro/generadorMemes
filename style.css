@@ -104,9 +104,10 @@ main {
 
 span {
     padding: 5px;
-    margin: 0 15px;
+    margin: 0 3px;
     color: #fbffff;
     font-size: 13px;
+    text-align: center;
 }
 
 .recuadroPadre {
@@ -177,7 +178,6 @@ aside{
     overflow-x: scroll;
     top: 0;
     right: 0;
-    overflow-x: scroll;
     width: 20%;
     height: 100%;
     display: flex;
@@ -210,6 +210,11 @@ input, select{
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 3%;
+}
+
+input[type="text"]{
+    margin: 0;
+    height: auto;
 }
 
 .fondoContainer{
@@ -391,12 +396,14 @@ input[type=range]:focus::-ms-fill-upper {
 
 .checkContainer{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
 }
 
 input[type=checkbox]{
     width: fit-content;
     height: fit-content;
+    margin-top: 8px;
 }
 
 .numberContainer{
@@ -424,21 +431,51 @@ input[type=checkbox]{
     margin: 10%;
 }
 
-.colorYfondo{
+.titleColorYfondo{
     display: flex;
-    flex-direction: row;
-
+    justify-content: left;
 }
 
-/* .colorContainer{
-    
+.titleColorYfondo h3{
+    margin-right: 30%;
+}
+
+.colorYfondo{
+    display: flex;
+    margin-right: 35%;
+}
+
+.colorContainer{
+    display: flex;
+    margin-right: 30%;
+    align-items: center;
+    background-color: #393e49;
+    border-radius: 7%;
+    padding: 2%;
+    padding-top: 4%;
 }
 
 .fondoCont{
+    display: flex;
+    align-items: center;
+    background-color: #393e49;
+    border-radius: 7%;
+    padding: 2%;
+    padding-top: 4%;
+}
 
-} */
+.btnContornoCont{
+display: flex;
+justify-content: space-evenly;
+padding-top: 5%;
+padding-bottom: 5%;
+}
 
-
+.btnContorno{
+    height: 35px;
+    width: 80px;
+    border-radius: 7%;
+}
 
 .botonDescarga{
     background-color: #3a7d33;
@@ -449,8 +486,7 @@ input[type=checkbox]{
     margin-top: 1%;
     margin-left: 0;
     margin-right: 0;
-    height: 6%;
-    
+    height: 6%;  
 }
 
 button{
