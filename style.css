@@ -106,7 +106,8 @@ span {
     padding: 5px;
     margin: 0 3px;
     color: #fbffff;
-    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
     text-align: center;
 }
 
@@ -394,6 +395,16 @@ input[type=range]:focus::-ms-fill-upper {
     padding-bottom: 1%;
 }
 
+.asideTxt h3{
+    margin-right: 35%;
+    margin-bottom: 2%;
+}
+
+.asideTxt select{
+    height: 25%;
+    font-size: 11px;
+}
+
 .checkContainer{
     display: flex;
     align-items: center;
@@ -436,23 +447,19 @@ input[type=checkbox]{
     justify-content: left;
 }
 
-.titleColorYfondo h3{
-    margin-right: 30%;
-}
-
 .colorYfondo{
     display: flex;
-    margin-right: 35%;
 }
 
 .colorContainer{
     display: flex;
-    margin-right: 30%;
+    margin-right: 3%;
     align-items: center;
     background-color: #393e49;
     border-radius: 7%;
     padding: 2%;
     padding-top: 4%;
+    width: 100%;
 }
 
 .fondoCont{
@@ -462,12 +469,12 @@ input[type=checkbox]{
     border-radius: 7%;
     padding: 2%;
     padding-top: 4%;
+    width: 100%;
 }
 
 .btnContornoCont{
 display: flex;
 justify-content: space-evenly;
-padding-top: 5%;
 padding-bottom: 5%;
 }
 
@@ -495,3 +502,5 @@ button{
     border-style: none;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* -------- MEDIAS QUERY ----------- */
