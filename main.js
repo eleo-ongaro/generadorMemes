@@ -17,18 +17,18 @@ const changeBackground = (e) => {
 // BG COLOR
 
 const inputCircle = document.getElementById('input-circle');
-console.log(inputCircle)
+// console.log(inputCircle)
 
 const colorName = document.getElementById('input-ColorName');
-console.log(colorName.innerHTML)
+//console.log(colorName.innerHTML)
 
-//circleColor.addEventListener('input', () => changeBGcolor);
+inputCircle.addEventListener('input', () => changeBGcolor);
 
-// function changeBGcolor() {
-//     const circleColorChoose = circleColor.value;
-//     imgMeme.style.backgroundColor = circleColorChoose;
-//     colorName.innerHTML = `${circleColorChoose.value}`;
-// }
+function changeBGcolor() {
+    const circleColorChoose = inputCircle.value;
+    imgMeme.style.backgroundColor = circleColorChoose;
+    colorName.innerHTML = `${circleColorChoose.value}`;
+}
 
 
 
