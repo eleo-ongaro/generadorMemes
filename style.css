@@ -143,6 +143,9 @@ span {
     height: 60%;
     margin: 0;
     padding: 0px;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 
 .bottom-text {
