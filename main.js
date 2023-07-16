@@ -10,10 +10,29 @@ urlInput.addEventListener('input', (e)=> changeBackground(e))
 
 const changeBackground = (e) => {
     imgMeme.style.backgroundImage = `url('${e.target.value}')`
-    imgMeme.style.backgroundSize = 'cover'
+    imgMeme.style.backgroundSize = 'contain'
     imgMeme.style.backgroundRepeat = 'no-repeat'
     imgMeme.style.backgroundPosition = 'center'
 }
+// BG COLOR
+
+const inputCircle = document.getElementById('input-circle');
+console.log(inputCircle)
+
+const colorName = document.getElementById('input-ColorName');
+console.log(colorName.innerHTML)
+
+//circleColor.addEventListener('input', () => changeBGcolor);
+
+// function changeBGcolor() {
+//     const circleColorChoose = circleColor.value;
+//     imgMeme.style.backgroundColor = circleColorChoose;
+//     colorName.innerHTML = `${circleColorChoose.value}`;
+// }
+
+
+
+
 
 // FILTROS IMG
 
