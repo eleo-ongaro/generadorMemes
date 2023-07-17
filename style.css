@@ -121,6 +121,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items:inherit;
+    border: 1px solid #5a5d68;
 }
 
 .top-text {
@@ -136,15 +137,12 @@ span {
 }
 
 .img-meme {
-    background-color: #000000;
+    background-color: #54565d;
     order: 1;
     width: 100%;
     height: 60%;
     margin: 0;
     padding: 0px;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 .bottom-text {
@@ -378,7 +376,6 @@ input[type=range]:focus::-ms-fill-upper {
     margin:0%;
     width: fit-content;
     padding: 3%;
-    
 }
 
 .asideTxt{

@@ -33,12 +33,12 @@ const changeBGcolor = () => {
 
 // BACKGROUND select //
 
-const efectsImage = document.getElementById("efects-image")
+const effectSelect = document.getElementById("effect-select")
+console.log(effectSelect)
+effectSelect.addEventListener('change', () => changeEffects());
 
-efectsImage.addEventListener('change', () => changeEfects());
-
-function changeEfects() {
-    imgContainer.style.backgroundBlendMode = `${efectsImage.value}`
+function changeEffects() {
+    imgMeme.style.backgroundBlendMode = `${effectSelect.value}`
 }
 
 
