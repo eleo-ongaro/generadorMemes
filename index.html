@@ -95,55 +95,53 @@
     
             <div class="filterBox">
                 <h3>FILTROS</h3>
-                <div class="boxRange">
-                    <label for="bright-filter">BRILLO</label>
-                    <INPUT type="range" min="0" max="1" value="1" step="0.1"  id="bright-filter">
+                <form id="filters-range">
+                    <div class="boxRange">
+                        <label for="bright-filter">BRILLO</label>
+                        <INPUT type="range" min="0" max="1" value="1" step="0.1"  id="bright-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="op-filter">OPACIDAD</label>
+                        <INPUT type="range" min="0" max="1" value="1" step="0.1" id="op-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="contrast-filter">CONTRASTE</label>
+                        <INPUT type="range" min="100" max="1000" value="100" id="contrast-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="blur-filter">DESENFOQUE</label>
+                        <INPUT type="range" min="0" max="10" value="0" step="0.1" id="blur-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="gray-scale-filter">ESCALADE GRISES</label>
+                        <INPUT type="range" min="0" max="100" value="0" id="gray-scale-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="sepia-filter">SEPIA</label>
+                        <INPUT type="range" min="0" max="100" value="0" id="sepia-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="hue-filter">HUE</label>
+                        <INPUT type="range" min="0" max="360" value="0" id="hue-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="sat-filter">SATURACIÓN</label>
+                        <INPUT type="range" min="100" max="1000" value="100" step="10"  id="sat-filter">
+                    </div>
+        
+                    <div class="boxRange">
+                        <label for="negative-filter">NEGATIVO</label>
+                        <INPUT type="range" min="0" max="1" value="0" step="0.1"  id="negative-filter">
+                    </div>
                 </div>
-    
-                <div class="boxRange">
-                    <label for="op-filter">OPACIDAD</label>
-                    <INPUT type="range" min="0" max="1" value="1" step="0.1" id="op-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="contrast-filter">CONTRASTE</label>
-                    <INPUT type="range" min="100" max="1000" value="100" id="contrast-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="blur-filter">DESENFOQUE</label>
-                    <INPUT type="range" min="0" max="10" value="0" step="0.1" id="blur-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="gray-scale-filter">ESCALADE GRISES</label>
-                    <INPUT type="range" min="0" max="100" value="0" id="gray-scale-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="sepia-filter">SEPIA</label>
-                    <INPUT type="range" min="0" max="100" value="0" id="sepia-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="hue-filter">HUE</label>
-                    <INPUT type="range" min="0" max="360" value="0" id="hue-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="sat-filter">SATURACION</label>
-                    <INPUT type="range" min="100" max="1000" value="100" step="10"  id="sat-filter">
-                </div>
-    
-                <div class="boxRange">
-                    <label for="negative-filter">NEGATIVO</label>
-                    <INPUT type="range" min="0" max="1" value="0" step="0.1"  id="negative-filter">
-                </div>
-            </div>
-
-            <form id="button-reset" >
-                <input type="reset" value="Reset">
-                <!-- <button class="btnReset">Reestablecer filtros</button> -->
+                    <input type="reset" value="Reestablecer filtros" class="btnReset" id="button-reset">
             </form>
         </div>
     </aside>
@@ -156,7 +154,7 @@
 
         <h3>SUPERIOR</h3>
         <div>
-            <Input type="text"  placeholder="TOP TEXT" ></Input>
+            <Input type="text"  placeholder="TOP TEXT" id="top-text"></Input>
             <div class="checkContainer">
                 <input type="checkbox">
                 <span>Sin texto superior</span> 
@@ -165,7 +163,7 @@
 
         <div>
             <h3>INFERIOR</h3>
-            <Input type="text" placeholder="BOTTOM TEXT"></Input>
+            <Input type="text" placeholder="BOTTOM TEXT" id="bottom-text"></Input>
             <div class="checkContainer">
                 <input type="checkbox">
                 <span>Sin texto inferior </span>
