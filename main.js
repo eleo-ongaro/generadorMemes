@@ -22,16 +22,24 @@ console.log(inputCircle.value)
 const colorName = document.getElementById('input-ColorName');
 console.log(colorName)
 
-inputCircle.addEventListener('input', (e) => changeBGcolor);
+inputCircle.addEventListener('input', () => changeBGcolor());
 
-const changeBGcolor = (e) => {
+const changeBGcolor = () => {
     let circleColorChoose = inputCircle.value;
-    imgMeme.style.backgroundColor = `circleColorChoose`;
+    imgMeme.style.backgroundColor = `${circleColorChoose}`;
     colorName.innerHTML = circleColorChoose;
 }
 
 
+// BACKGROUND select //
 
+const efectsImage = document.getElementById("efects-image")
+
+efectsImage.addEventListener('change', () => changeEfects());
+
+function changeEfects() {
+    imgContainer.style.backgroundBlendMode = `${efectsImage.value}`
+}
 
 
 // FILTROS IMG
