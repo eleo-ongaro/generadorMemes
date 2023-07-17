@@ -17,17 +17,17 @@ const changeBackground = (e) => {
 // BG COLOR
 
 const inputCircle = document.getElementById('input-circle');
-console.log(inputCircle)
+console.log(inputCircle.value)
 
 const colorName = document.getElementById('input-ColorName');
 console.log(colorName)
 
-inputCircle.addEventListener('input', () => changeBGcolor);
+inputCircle.addEventListener('input', (e) => changeBGcolor);
 
-const changeBGcolor = () => {
+const changeBGcolor = (e) => {
     let circleColorChoose = inputCircle.value;
-    imgMeme.style.backgroundColor = circleColorChoose;
-    colorName.innerHTML = `${circleColorChoose.value}`;
+    imgMeme.style.backgroundColor = `circleColorChoose`;
+    colorName.innerHTML = circleColorChoose;
 }
 
 
