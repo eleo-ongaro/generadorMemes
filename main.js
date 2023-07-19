@@ -186,7 +186,7 @@ const hiddenTxtBottom = () => {
 };
 
 // SELECT FUENTES
-
+        // ---- NO FUNCIONAAAAAAAAAAAA
 const selectorFuentes = document.getElementById('selector-fuentes');
 //console.log(selectorFuentes);
 
