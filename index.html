@@ -19,6 +19,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -43,18 +49,15 @@
 
     <main id="main-">
 
-        <div class="recuadroPadre">
-            <div class="top-text" id="top-textDiv">
-                <p id="topText-meme">TOP TEXT</p>
-            </div>
+        <div class="recuadroPadre" id="recuadro-padre">
+
+            <p class="top-text" id="topText-meme">TOP TEXT</p>
             <div class="img-meme" id="img-meme">
             </div>
-            <div class="bottom-text" id="bottom-textDiv">
-                <p id="bottom-textMeme">BOTOM TEXT</p>
-            </div>
+            <p class="bottom-text" id="bottom-textMeme">BOTOM TEXT</p>
         </div>
 
-        <button class="botonDescarga">
+        <button class="botonDescarga" id="btn-descarga">
             <i class="fa-solid fa-download"></i>Descargar meme
         </button>
 
@@ -179,16 +182,13 @@
 
             <div>
                 <h3>FUENTE</h3>
-                <select>
-                    <option value="opcion1">Impact</option>
-                    <option value="opcion2">Arial</option>
-                    <option value="opcion3">Arial Black</option>
-                    <option value="opcion4">American Typewriter</option>
-                    <option value="opcion5">Andale Mono</option>
-                    <option value="opcion6">Comic Sans MS</option>
-                    <option value="opcion7">Helvetica</option>
-                    <option value="opcion8">Verdana</option>
-                    <option value="opcion9">Times New Roman</option>
+                <select id="selector-fuentes">
+                    <option selected disabled>Elegí una fuente</option>
+                    <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Impact</option>
+                    <option value="Arial, Helvetica, sans-serif">Arial</option>
+                    <option value="Montserrat", sans-serif>Montserrat</option>
+                    <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                    <option value="'Times New Roman', Times, serif">Times New Roman</option>
                 </select>
 
                 <div class="numberNbtn">

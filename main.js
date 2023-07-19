@@ -1,30 +1,28 @@
-// MODO CLARO - OBSCURO //
-const headeR = document.getElementById('header-');
-console.log(headeR)
-const maiN = document.getElementById('main-');
-console.log(maiN)
-const divAsideImg = document.getElementById('div-asideImg');
-console.log(divAsideImg)
-const divAsideTxt = document.getElementById('div-asideTxt');
-console.log(divAsideTxt)
+// ##### MODO CLARO - OBSCURO ##### //
+const headeR = document.getElementById("header-");
+//console.log(headeR)
+const maiN = document.getElementById("main-");
+//console.log(maiN)
+const divAsideImg = document.getElementById("div-asideImg");
+//console.log(divAsideImg)
+const divAsideTxt = document.getElementById("div-asideTxt");
+//console.log(divAsideTxt)
 
-const modeButton = document.getElementById('btn-claro');
-modeButton.addEventListener('click', () => newMode());
+const modeButton = document.getElementById("btn-claro");
+modeButton.addEventListener("click", () => newMode());
 
 const newMode = () => {
-    divAsideTxt.classList.toggle('bright-header');
-    divAsideImg.classList.toggle('bright-header');
-    headeR.classList.toggle('bright-header');
-    maiN.classList.toggle('bright-header');
+    divAsideTxt.classList.toggle("bright-header");
+    divAsideImg.classList.toggle("bright-header");
+    headeR.classList.toggle("bright-header");
+    maiN.classList.toggle("bright-header");
 
-    if(divAsideTxt.classList.contains('bright-header')){
+    if (divAsideTxt.classList.contains("bright-header")) {
         modeButton.innerText = "🌑 Modo obscuro";
-    } else{
-        modeButton.innerText = "💡 Modo claro"
-    } 
-}
-
-
+    } else {
+        modeButton.innerText = "💡 Modo claro";
+    }
+};
 
 // ####### ESCONDER ASIDES ######## //
 const btnTxt = document.getElementById("btn-txt");
@@ -44,6 +42,19 @@ const meJuiTxt = () => {
 const meJuiImg = () => {
     asideTxt.classList.add("noToy");
     asideImg.classList.remove("noToy");
+};
+
+// ##### DESCARGAR MEME ##### //
+
+const downloadButton = document.getElementById("btn-descarga");
+const meme = document.getElementById("recuadro-padre");
+
+downloadButton.addEventListener("click", () => downloadMeme());
+
+const downloadMeme = () => {
+    domtoimage.toBlob(meme).then(function (blob) {
+        window.saveAs(blob, "mi-meme.png");
+    });
 };
 
 // *************** ASIDE IMG ************** //
@@ -84,7 +95,7 @@ effectSelect.addEventListener("change", () => changeEffects());
 
 function changeEffects() {
     imgMeme.style.backgroundBlendMode = `${effectSelect.value}`;
-}
+};
 
 // FILTROS IMG
 
@@ -135,7 +146,7 @@ const resetButton = () => {
 // tOP y BOTTOM TEXT
 const topText = document.getElementById("top-text");
 const topTextMeme = document.getElementById("topText-meme");
-console.log(topTextMeme)
+//console.log(topTextMeme)
 topText.addEventListener("input", () => changeText());
 
 const bottomText = document.getElementById("bottom-text");
@@ -156,14 +167,14 @@ checkboxTxtSup.addEventListener("change", () => hiddenTxtTop());
 
 const checkboxTxtInf = document.getElementById("checkbox-txtInf");
 checkboxTxtInf.addEventListener("change", () => hiddenTxtBottom());
-// console.log(bottomTextDiv);
 
 const hiddenTxtTop = () => {
+    //console.log(checkboxTxtSup.checked);
     if (checkboxTxtSup.checked) {
         topTextMeme.classList.add("noToy");
     } else {
         topTextMeme.classList.remove("noToy");
-}
+    }
 };
 
 const hiddenTxtBottom = () => {
@@ -171,5 +182,15 @@ const hiddenTxtBottom = () => {
         bottomTextMeme.classList.add("noToy");
     } else {
         bottomTextMeme.classList.remove("noToy");
-}
+    }
 };
+
+// SELECT FUENTES
+
+const selectorFuentes = document.getElementById('selector-fuentes');
+//console.log(selectorFuentes);
+
+const eleccionFuentes = () => {
+    topText.style.fontFamily = `${selectorFuentes.value}`;
+    bottomText.style.fontFamily = `${selectorFuentes.value}`;
+}
