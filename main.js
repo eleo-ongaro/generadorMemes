@@ -40,7 +40,7 @@ const effectSelect = document.getElementById("effect-select");
 effectSelect.addEventListener('change', () => changeEffects());
 
 function changeEffects() {
-    imgMeme.style.backgroundBlendMode = `${effectSelect.value}`
+    imgMeme.style.backgroundBlendMode = `${effectSelect.value}`;
 }
 
 
@@ -91,16 +91,20 @@ const resetButton = () => {
 
 // *************** ASIDE TXT ************** //
 
-// tOP TEXT
+// tOP y BOTTOM TEXT
 const topText = document.getElementById('top-text');
-console.log(topText)
-topText.addEventListener('change', () => changeTopText());
+const topTextMeme = document.getElementById('topText-meme')
+//console.log(topTextMeme)
+topText.addEventListener('input', () => changeText());
+
 
 const bottomText = document.getElementById('bottom-text');
-console.log(bottomText.value)
+const bottomTextMeme = document.getElementById('bottom-textMeme');
 
-const changeTopText = () => {
-    let chosenText = topText.value
-    topText.textContent.replace = `${chosenText}`;
+bottomText.addEventListener('input', () => changeText());
+
+const changeText = () => {
+    topTextMeme.innerText = topText.value;
+    bottomTextMeme.innerText = bottomText.value;
 }
 
