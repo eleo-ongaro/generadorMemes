@@ -5,7 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", sans-serif;
-    font-size: 11px;
+    font-size: 2vh;
 }
 
 header {
@@ -14,6 +14,13 @@ header {
     height: 20%;
     display: flex;
     padding-bottom: 15px;
+}
+
+i {
+    margin: 5%;
+    align-items: center;
+    justify-content: center;
+padding-left: 0%;
 }
 
 img {
@@ -87,6 +94,25 @@ main {
     align-items: center;
 }
 
+.options {
+    display: flex;
+    width: 50%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    height: 4vh;
+    width: 20%;
+    background-color: #393e49;
+}
+
 .titleMeme {
     width: 100%;
     height: 70%;
@@ -100,7 +126,6 @@ span {
     margin: 0 3px;
     color: #fbffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 11px;
     text-align: center;
 }
 
@@ -152,12 +177,9 @@ span {
 
 h2 {
     text-align: center;
-    font-size: 18px;
 }
 
-h3,
-h4,
-h5 {
+h3, h4, h5 {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: left;
@@ -198,7 +220,6 @@ select {
     color: white;
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 11px;
     width: 95%;
     height: 20%;
     border-radius: 5%;
@@ -396,7 +417,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .asideTxt select {
     height: 25%;
-    font-size: 11px;
+    
 }
 
 .checkContainer {
@@ -488,6 +509,7 @@ input[type="checkbox"] {
     margin-left: 0;
     margin-right: 0;
     height: 6%;
+    width: 15%;
 }
 
 button {
@@ -496,5 +518,18 @@ button {
     border-style: none;
     font-family: "Montserrat", sans-serif;
 }
+
+.btnReset:hover {
+    background-color: #ededa0;
+    color: #000000;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ededa0;
+    color: #000000;
+    font-weight: bold;
+}
+
 
 /* -------- MEDIAS QUERY ----------- */
