@@ -377,7 +377,7 @@ input[type="range"]:focus::-ms-fill-upper {
     position: absolute;
     overflow-x: scroll;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 20%;
     display: flex;
