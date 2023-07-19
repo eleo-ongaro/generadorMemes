@@ -8,6 +8,11 @@ body {
     font-size: 2vh;
 }
 
+.bright-header {
+    background-color: #dede6a;
+    color: #000000;
+    
+}
 header {
     background-color: #191e2b;
     margin: 0px;
@@ -40,6 +45,9 @@ main {
     align-items: center;
     background-color: #30343f;
 }
+
+
+
 
 /* ------------------INICIO SCROLLBAR------------------  */
 /* Firefox */
@@ -155,7 +163,7 @@ span {
 }
 
 .img-meme {
-    background-color: #54565d;
+    background-color: #ededa0;
     order: 1;
     width: 100%;
     height: 60%;

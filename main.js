@@ -1,11 +1,37 @@
 // MODO CLARO - OBSCURO //
+const headeR = document.getElementById('header-');
+console.log(headeR)
+const maiN = document.getElementById('main-');
+console.log(maiN)
+const divAsideImg = document.getElementById('div-asideImg');
+console.log(divAsideImg)
+const divAsideTxt = document.getElementById('div-asideTxt');
+console.log(divAsideTxt)
+
+const modeButton = document.getElementById('btn-claro');
+modeButton.addEventListener('click', () => newMode());
+
+const newMode = () => {
+    divAsideTxt.classList.toggle('bright-header');
+    divAsideImg.classList.toggle('bright-header');
+    headeR.classList.toggle('bright-header');
+    maiN.classList.toggle('bright-header');
+
+    if(divAsideTxt.classList.contains('bright-header')){
+        modeButton.innerText = "🌑 Modo obscuro";
+    } else{
+        modeButton.innerText = "💡 Modo claro"
+    } 
+}
+
+
 
 // ####### ESCONDER ASIDES ######## //
 const btnTxt = document.getElementById("btn-txt");
 const btnImg = document.getElementById("btn-img");
 
-const asideImg = document.getElementById("aside-Img");
 const asideTxt = document.getElementById("aside-Txt");
+const asideImg = document.getElementById("aside-Img");
 
 btnTxt.addEventListener("click", () => meJuiTxt());
 btnImg.addEventListener("click", () => meJuiImg());
@@ -104,12 +130,12 @@ const resetButton = () => {
     imgMeme.style.filter = "none";
 };
 
-// *************** ASIDE TXT ************** //
+// ########### < ASIDE TXT > ########### //
 
 // tOP y BOTTOM TEXT
 const topText = document.getElementById("top-text");
 const topTextMeme = document.getElementById("topText-meme");
-//console.log(topTextMeme)
+console.log(topTextMeme)
 topText.addEventListener("input", () => changeText());
 
 const bottomText = document.getElementById("bottom-text");
@@ -125,13 +151,25 @@ const changeText = () => {
 // CHECKBOX SIN TEXTO SUP/INF
 
 const checkboxTxtSup = document.getElementById("checkbox-txtSup");
-checkboxTxtSup.addEventListener("change", () => hiddenTxt());
+checkboxTxtSup.addEventListener("change", () => hiddenTxtTop());
+//console.log(checkboxTxtSup.checked);
 
 const checkboxTxtInf = document.getElementById("checkbox-txtInf");
-checkboxTxtInf.addEventListener("change", () => hiddenTxt());
+checkboxTxtInf.addEventListener("change", () => hiddenTxtBottom());
+// console.log(bottomTextDiv);
 
-const hiddenTxt = () => {
-    console.log(checkboxTxtInf.checked, checkboxTxtSup.checked);
-    topTextMeme.classList.toggle("hidden");
-    bottomTextMeme.classList.toggle("hidden");
+const hiddenTxtTop = () => {
+    if (checkboxTxtSup.checked) {
+        topTextMeme.classList.add("noToy");
+    } else {
+        topTextMeme.classList.remove("noToy");
+}
+};
+
+const hiddenTxtBottom = () => {
+    if (checkboxTxtInf.checked) {
+        bottomTextMeme.classList.add("noToy");
+    } else {
+        bottomTextMeme.classList.remove("noToy");
+}
 };

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Editor de memes">
-    <meta property = "og:description" content="Creá y editá tus propios memes!!">
-    <meta property = "og:site_name" content="Editor de memes">
-    <meta property = "og:type" content="website">
-    <meta property = "og:image" content="assets/perroAnsioso4.png">
+    <meta property="og:description" content="Creá y editá tus propios memes!!">
+    <meta property="og:site_name" content="Editor de memes">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/perroAnsioso4.png">
 
     <title>Editor de Memes</title>
     <link rel="stylesheet" href="style.css">
@@ -19,67 +20,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!--  ******************* HEADER **************** -->
+    <!--  ******************* HEADER **************** -->
 
-    <header>
-        <div class="caja-header">
+    <header id="header-">
+        <div class="caja-header ">
             <div class="titleMeme">
                 <img src="./assets/BusinessCat2.png" alt="perro ansioso">
-            <h1>Generador de Memes</h1>
+                <h1>Generador de Memes</h1>
             </div>
             <div class="options">
                 <button id="btn-img" class="btn"><i class="fa-solid fa-image"></i>Imagen</button>
                 <button id="btn-txt" class="btn"><i class="fa-solid fa-font"></i>Texto</button>
-                <button class="btn-obscuro btn" id="btn-obscuro"><i class="fa-solid fa-moon"></i> Modo obscuro</button>
-                <button id="btn-claro" class="btn"><i class="fa-regular fa-sun"></i> Modo claro</button>
+                <button id="btn-claro" class="btn">💡 Modo claro</button>
             </div>
         </div>
     </header>
 
-    <main>
-        
-<!-- CUADRADO TOTAL, Q ADEMAS TIENE LAS CAJAS DE TEXTO, Y LO DEL MEDIO SERIA EL ESPACIO PARA LA IMAGEN -->
+    <!--  ******************* MAIN **************** -->
+
+    <main id="main-">
 
         <div class="recuadroPadre">
-            <div class="top-text">
+            <div class="top-text" id="top-textDiv">
                 <p id="topText-meme">TOP TEXT</p>
             </div>
-            <div class="img-meme" id="img-meme"> 
+            <div class="img-meme" id="img-meme">
             </div>
-            <div class="bottom-text">
+            <div class="bottom-text" id="bottom-textDiv">
                 <p id="bottom-textMeme">BOTOM TEXT</p>
             </div>
         </div>
-    
+
         <button class="botonDescarga">
             <i class="fa-solid fa-download"></i>Descargar meme
         </button>
 
     </main>
-    
-<!-- ########## ASIDE IMAGEN ########## -->
+
+    <!-- ########## ASIDE IMAGEN ########## -->
 
     <aside id="aside-Img">
-        <div class="aside-img">
+        <div id="div-asideImg" class="aside-img">
             <h2>IMAGEN</h2>
             <div>
                 <h3>URL</h3>
                 <Input type="url" id="url-input">
             </div>
 
-<!--******* COLOR DE FONDO *******-->
+            <!--******* COLOR DE FONDO *******-->
 
             <div>
                 <h3>FONDO</h3>
                 <div class="fondoContainer">
                     <div class="nameColor">
                         <div class="circleColor">
-                            <Input type="color" id="input-circle" value="#54565d"></Input>
+                            <Input type="color" id="input-circle" value="#ededa0"></Input>
                         </div>
                         <div class="spanContainer">
-                            <span class="spanColor" id="input-ColorName">#54565d</span>
+                            <span class="spanColor" id="input-ColorName">#ededa0</span>
                         </div>
                     </div>
                     <div class="fondoOptions">
@@ -95,175 +96,177 @@
                 </div>
             </div>
 
-<!--******** FILTROS ********-->
-    
+            <!--******** FILTROS ********-->
+
             <div class="filterBox">
                 <h3>FILTROS</h3>
                 <form id="filters-range">
                     <div class="boxRange">
                         <label for="bright-filter">BRILLO</label>
-                        <INPUT type="range" min="0" max="1" value="1" step="0.1"  id="bright-filter">
+                        <INPUT type="range" min="0" max="1" value="1" step="0.1" id="bright-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="op-filter">OPACIDAD</label>
                         <INPUT type="range" min="0" max="1" value="1" step="0.1" id="op-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="contrast-filter">CONTRASTE</label>
                         <INPUT type="range" min="100" max="1000" value="100" id="contrast-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="blur-filter">DESENFOQUE</label>
                         <INPUT type="range" min="0" max="10" value="0" step="0.1" id="blur-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="gray-scale-filter">ESCALADE GRISES</label>
                         <INPUT type="range" min="0" max="100" value="0" id="gray-scale-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="sepia-filter">SEPIA</label>
                         <INPUT type="range" min="0" max="100" value="0" id="sepia-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="hue-filter">HUE</label>
                         <INPUT type="range" min="0" max="360" value="0" id="hue-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="sat-filter">SATURACIÓN</label>
-                        <INPUT type="range" min="100" max="1000" value="100" step="10"  id="sat-filter">
+                        <INPUT type="range" min="100" max="1000" value="100" step="10" id="sat-filter">
                     </div>
-        
+
                     <div class="boxRange">
                         <label for="negative-filter">NEGATIVO</label>
-                        <INPUT type="range" min="0" max="1" value="0" step="0.1"  id="negative-filter">
+                        <INPUT type="range" min="0" max="1" value="0" step="0.1" id="negative-filter">
                     </div>
-                </div>
-                    <input type="reset" value="Reestablecer filtros" class="btnReset" id="button-reset">
+            </div>
+            <input type="reset" value="Reestablecer filtros" class="btnReset" id="button-reset">
             </form>
         </div>
     </aside>
 
-<!-- ############## ASIDE TEXT ############ -->
+    <!-- ############## ASIDE TEXT ############ -->
 
     <aside id="aside-Txt">
-        <div class="asideTxt">
-        <h2>TEXTO</h2>
+        <div class="asideTxt" id="div-asideTxt">
+            <h2>TEXTO</h2>
 
-        <h3>SUPERIOR</h3>
-        <div>
-            <Input type="text"  placeholder="TOP TEXT" id="top-text"></Input>
-            <div class="checkContainer">
-                <input type="checkbox" id="checkbox-txtSup">
-                <span>Sin texto superior</span> 
-            </div>
-        </div>
-
-        <div>
-            <h3>INFERIOR</h3>
-            <Input type="text" placeholder="BOTTOM TEXT" id="bottom-text"></Input>
-            <div class="checkContainer">
-                <input type="checkbox" id="checkbox-txtInf">
-                <span>Sin texto inferior </span>
-            </div>
-        </div>
-
-<!--******** FUENTE ********-->
-
-        <div>
-            <h3>FUENTE</h3>
-            <select>
-                <option value="opcion1">Impact</option>
-                <option value="opcion2">Arial</option>
-                <option value="opcion3">Arial Black</option>
-                <option value="opcion4">American Typewriter</option>
-                <option value="opcion5">Andale Mono</option>
-                <option value="opcion6">Comic Sans MS</option>
-                <option value="opcion7">Helvetica</option>
-                <option value="opcion8">Verdana</option>
-                <option value="opcion9">Times New Roman</option>
-            </select>
-
-            <div class="numberNbtn">
-                <input type="number" class="numberContainer">
-
-                <div class="iconText">
-                    <button class="btnText"><i class="fa-solid fa-align-left"></i></button>
-
-                    <button class="btnText"><i class="fa-solid fa-align-center"></i></button>
-
-                    <button class="btnText"><i class="fa-solid fa-align-right"></i></button>
+            <h3>SUPERIOR</h3>
+            <div>
+                <Input type="text" placeholder="TOP TEXT" id="top-text"></Input>
+                <div class="checkContainer">
+                    <input type="checkbox" id="checkbox-txtSup">
+                    <span id="top-textSpan">Sin texto superior</span>
                 </div>
             </div>
-        </div>
 
-        <div>
-            <div class="titleColorYfondo">
-                <h3>COLOR</h3>
-                <h3>FONDO</h3>
-            </div>
-            <div class="colorYfondo">
-                <div class="colorContainer">
-                    <div class="circleTxt">
-                        <Input type="color"></Input>
-                    </div>
-                    <div class="spanTxt">
-                        <span>#ffff</span>
-                    </div>
+            <div>
+                <h3>INFERIOR</h3>
+                <Input type="text" placeholder="BOTTOM TEXT" id="bottom-text"></Input>
+                <div class="checkContainer">
+                    <input type="checkbox" id="checkbox-txtInf">
+                    <span id="bottom-textSpan">Sin texto inferior </span>
                 </div>
-            
-                
-                <div class="fondoCont">
-                    <div class="circleTxt">
-                        <Input type="color"></Input>
-                    </div>
-                    <div class="spanTxt">
-                        <span>#ffff</span>
+            </div>
+
+            <!--******** FUENTE ********-->
+
+            <div>
+                <h3>FUENTE</h3>
+                <select>
+                    <option value="opcion1">Impact</option>
+                    <option value="opcion2">Arial</option>
+                    <option value="opcion3">Arial Black</option>
+                    <option value="opcion4">American Typewriter</option>
+                    <option value="opcion5">Andale Mono</option>
+                    <option value="opcion6">Comic Sans MS</option>
+                    <option value="opcion7">Helvetica</option>
+                    <option value="opcion8">Verdana</option>
+                    <option value="opcion9">Times New Roman</option>
+                </select>
+
+                <div class="numberNbtn">
+                    <input type="number" class="numberContainer">
+
+                    <div class="iconText">
+                        <button class="btnText"><i class="fa-solid fa-align-left"></i></button>
+
+                        <button class="btnText"><i class="fa-solid fa-align-center"></i></button>
+
+                        <button class="btnText"><i class="fa-solid fa-align-right"></i></button>
                     </div>
                 </div>
             </div>
-        <div class="checkContainer">
-            <input type="checkbox">
-            <span>Fondo transparente</span> 
-        </div>
 
-        <div>
-            <h3>CONTORNO</h3>
-            <div class="btnContornoCont">
-                <button class="btnContorno">Ninguno</button>
-                <button class="btnContorno">Claro</button>
-                <button class="btnContorno">Obscuro</button>
+            <div>
+                <div class="titleColorYfondo">
+                    <h3>COLOR</h3>
+                    <h3>FONDO</h3>
+                </div>
+                <div class="colorYfondo">
+                    <div class="colorContainer">
+                        <div class="circleTxt">
+                            <Input type="color"></Input>
+                        </div>
+                        <div class="spanTxt">
+                            <span>#ffff</span>
+                        </div>
+                    </div>
+
+
+                    <div class="fondoCont">
+                        <div class="circleTxt">
+                            <Input type="color"></Input>
+                        </div>
+                        <div class="spanTxt">
+                            <span>#ffff</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkContainer">
+                    <input type="checkbox">
+                    <span>Fondo transparente</span>
+                </div>
+
+                <div>
+                    <h3>CONTORNO</h3>
+                    <div class="btnContornoCont">
+                        <button class="btnContorno">Ninguno</button>
+                        <button class="btnContorno">Claro</button>
+                        <button class="btnContorno">Obscuro</button>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>ESPACIADO</h3>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <h3>INTERLINEADO</h3>
+                    <select>
+                        <option value="opcion1">0.8</option>
+                        <option value="opcion2">1</option>
+                        <option value="opcion3">1.2</option>
+                        <option value="opcion4">1.5</option>
+                        <option value="opcion5">2</option>
+                        <option value="opcion6">2.5</option>
+                        </section>
+                </div>
             </div>
         </div>
-
-        <div>
-            <h3>ESPACIADO</h3>
-            <input type="number">
-        </div>
-
-        <div>
-            <h3>INTERLINEADO</h3>
-            <select>
-                <option value="opcion1">0.8</option>
-                <option value="opcion2">1</option>
-                <option value="opcion3">1.2</option>
-                <option value="opcion4">1.5</option>
-                <option value="opcion5">2</option>
-                <option value="opcion6">2.5</option>
-            </section>
-        </div> 
-    </div>
     </aside>
 
-    
-    
+
+
 
     <script src="main.js"></script>
 </body>
+
 </html>
