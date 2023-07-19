@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
     height: 100vh;
     overflow: hidden;
     margin: 0px;
     padding: 0px;
-    font-family:'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
 }
 
@@ -13,18 +14,17 @@ header {
     height: 20%;
     display: flex;
     padding-bottom: 15px;
-    
 }
 
-img{
+img {
     height: 100%;
-    
 }
 
-h1{
+h1 {
     display: inline;
     color: #fbffff;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -32,14 +32,13 @@ main {
     width: 100%;
     align-items: center;
     background-color: #30343f;
-    
 }
 
 /* ------------------INICIO SCROLLBAR------------------  */
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #5A5D68 #E6E6E6;
+    scrollbar-color: #5a5d68 #e6e6e6;
 }
 
 /* Chrome, Edge and Safari */
@@ -50,63 +49,57 @@ main {
 
 *::-webkit-scrollbar-track {
     border-radius: 4px;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
 }
 
 *::-webkit-scrollbar-track:hover {
-    background-color: #B8C0C2;
+    background-color: #b8c0c2;
 }
 
 *::-webkit-scrollbar-track:active {
-    background-color: #B8C0C2;
+    background-color: #b8c0c2;
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #5A5D68;
+    background-color: #5a5d68;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-    background-color: #32343A;
+    background-color: #32343a;
 }
 
 *::-webkit-scrollbar-thumb:active {
     background-color: #121315;
 }
+
 /* ------------------FIN SCROLLBAR------------------  */
+.noToy {
+    display: none;
+}
 
 .caja-header {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90%;
-    justify-items: center; 
+    justify-items: center;
     align-items: center;
-    
 }
 
-/* .options{
-    
-} */
-
-/* .fa-solid, .fa-regular {
-    COMO LOGRAR UN ESPACIO ENTRE EL ICONO Y EL TEXTO?
-} */
-
-.titleMeme{
+.titleMeme {
     width: 100%;
     height: 70%;
     margin-top: 20px;
     margin-bottom: 15px;
     text-align: center;
-    
 }
 
 span {
     padding: 5px;
     margin: 0 3px;
     color: #fbffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 11px;
     text-align: center;
 }
@@ -120,7 +113,7 @@ span {
     height: 80%;
     display: flex;
     flex-direction: column;
-    align-items:inherit;
+    align-items: inherit;
     border: 1px solid #5a5d68;
 }
 
@@ -131,8 +124,8 @@ span {
     height: 20%;
     display: flex;
     align-items: center;
-    justify-content:center; 
-    margin: 0;    
+    justify-content: center;
+    margin: 0;
     order: 0;
 }
 
@@ -155,26 +148,27 @@ span {
     align-items: center;
     justify-content: center;
     order: 2;
-    
 }
 
-h2{
-text-align: center;
-font-size: 18px;
+h2 {
+    text-align: center;
+    font-size: 18px;
 }
 
-h3, h4, h5{
+h3,
+h4,
+h5 {
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: left;
-    
 }
-aside{
+
+aside {
     display: flex;
     flex-direction: column;
 }
 
-.asideImg{
+.aside-img {
     position: absolute;
     overflow-x: scroll;
     top: 0;
@@ -190,18 +184,19 @@ aside{
     padding-bottom: 1%;
     overflow: scroll;
     color: white;
-    background-color: #252935;    
+    background-color: #252935;
 }
 
-label{
+label {
     display: block;
     margin: 0;
-} 
+}
 
-input, select{
-    background-color: #393e49; 
+input,
+select {
+    background-color: #393e49;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 11px;
     width: 95%;
@@ -213,33 +208,32 @@ input, select{
     margin-bottom: 3%;
 }
 
-input[type="text"]{
+input[type="text"] {
     margin: 0;
     height: auto;
 }
 
-.fondoContainer{
+.fondoContainer {
     display: flex;
     align-items: center;
-    
 }
 
-.nameColor{
+.nameColor {
     background-color: #393e49;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1%;
     border-radius: 7%;
-    
 }
 
-.circleColor, .spanContainer, .spanColor{
+.circleColor,
+.spanContainer,
+.spanColor {
     display: flex;
     flex-direction: column;
     margin: 0;
 }
-
 
 input[type="color"],
 input[type="color"]::-webkit-color-swatch-wrapper,
@@ -250,81 +244,81 @@ input[type="color"]::-webkit-color-swatch {
     align-items: center;
 }
 
-.fondoOptions{
+.fondoOptions {
     background-color: 393e49;
     display: block;
     margin-left: 3%;
 }
-.optionsDesplegable{
+
+.optionsDesplegable {
     padding: 9%;
 }
 
-.boxRange{
+.boxRange {
     align-items: center;
     justify-content: center;
 }
 
-input[type=range] {
+input[type="range"] {
     height: 27px;
     -webkit-appearance: none;
     width: 100%;
     background-color: transparent;
     margin: 0;
     padding: 0;
-    
 }
 
-input[type=range]:focus {
+input[type="range"]:focus {
     outline: none;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
     box-shadow: 0px 0px 0px #000000;
-    background: #5A5D68;
+    background: #5a5d68;
     border-radius: 4px;
     border: 0px solid #000000;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px #000000;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     height: 18px;
     width: 18px;
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #ffffff;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -7.5px;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #5A5D68;
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #5a5d68;
 }
 
-input[type=range]::-moz-range-track {
+input[type="range"]::-moz-range-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
     box-shadow: 0px 0px 0px #000000;
-    background: #5A5D68;
+    background: #5a5d68;
     border-radius: 4px;
     border: 0px solid #000000;
 }
 
-input[type=range]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
     box-shadow: 0px 0px 0px #000000;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     height: 18px;
     width: 18px;
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #ffffff;
     cursor: pointer;
 }
 
-input[type=range]::-ms-track {
+input[type="range"]::-ms-track {
     width: 100%;
     height: 6px;
     cursor: pointer;
@@ -333,52 +327,53 @@ input[type=range]::-ms-track {
     color: transparent;
 }
 
-input[type=range]::-ms-fill-lower {
-    background: #5A5D68;
+input[type="range"]::-ms-fill-lower {
+    background: #5a5d68;
     border: 0px solid #000000;
     border-radius: 8px;
     box-shadow: 0px 0px 0px #000000;
 }
 
-input[type=range]::-ms-fill-upper {
-    background: #5A5D68;
+input[type="range"]::-ms-fill-upper {
+    background: #5a5d68;
     border: 0px solid #000000;
     border-radius: 8px;
     box-shadow: 0px 0px 0px #000000;
 }
 
-input[type=range]::-ms-thumb {
+input[type="range"]::-ms-thumb {
     margin-top: 1px;
     box-shadow: 0px 0px 0px #000000;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     height: 18px;
     width: 18px;
     border-radius: 25px;
-    background: #FFFFFF;
+    background: #ffffff;
     cursor: pointer;
 }
 
-input[type=range]:focus::-ms-fill-lower {
-    background: #5A5D68;
+input[type="range"]:focus::-ms-fill-lower {
+    background: #5a5d68;
 }
 
-input[type=range]:focus::-ms-fill-upper {
-    background: #5A5D68;
+input[type="range"]:focus::-ms-fill-upper {
+    background: #5a5d68;
 }
 
-.btnReset{
+.btnReset {
     background-color: #393e49;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    border: none; 
+    font-family: "Montserrat", sans-serif;
+    border: none;
     border-radius: 3%;
     border-radius: 5%;
-    margin:0%;
+    margin-top: 10%;
     width: fit-content;
+    height: max-content;
     padding: 3%;
 }
 
-.asideTxt{
+.asideTxt {
     position: absolute;
     overflow-x: scroll;
     top: 0;
@@ -394,46 +389,46 @@ input[type=range]:focus::-ms-fill-upper {
     padding-bottom: 1%;
 }
 
-.asideTxt h3{
+.asideTxt h3 {
     margin-right: 35%;
     margin-bottom: 2%;
 }
 
-.asideTxt select{
+.asideTxt select {
     height: 25%;
     font-size: 11px;
 }
 
-.checkContainer{
+.checkContainer {
     display: flex;
     align-items: center;
     margin-top: 2%;
 }
 
-input[type=checkbox]{
+input[type="checkbox"] {
     width: fit-content;
     height: fit-content;
     margin-top: 8px;
 }
 
-.numberContainer{
+.numberContainer {
     margin-right: 1%;
     width: 50%;
 }
 
-.numberNbtn{
+.numberNbtn {
     display: flex;
     align-items: center;
     width: 43vh;
     margin: 0;
 }
 
-.iconText{
+.iconText {
     display: flex;
     margin-bottom: 1%;
 }
 
-.btnText{
+.btnText {
     border-radius: 7%;
     padding: 15%;
     padding-left: 20%;
@@ -441,16 +436,16 @@ input[type=checkbox]{
     margin: 10%;
 }
 
-.titleColorYfondo{
+.titleColorYfondo {
     display: flex;
     justify-content: left;
 }
 
-.colorYfondo{
+.colorYfondo {
     display: flex;
 }
 
-.colorContainer{
+.colorContainer {
     display: flex;
     margin-right: 3%;
     align-items: center;
@@ -461,7 +456,7 @@ input[type=checkbox]{
     width: 100%;
 }
 
-.fondoCont{
+.fondoCont {
     display: flex;
     align-items: center;
     background-color: #393e49;
@@ -471,35 +466,35 @@ input[type=checkbox]{
     width: 100%;
 }
 
-.btnContornoCont{
-display: flex;
-justify-content: space-evenly;
-padding-bottom: 5%;
+.btnContornoCont {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
 }
 
-.btnContorno{
+.btnContorno {
     height: 35px;
     width: 80px;
     border-radius: 7%;
 }
 
-.botonDescarga{
+.botonDescarga {
     background-color: #3a7d33;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    border: none; 
+    font-family: "Montserrat", sans-serif;
+    border: none;
     border-radius: 5%;
     margin-top: 1%;
     margin-left: 0;
     margin-right: 0;
-    height: 6%;  
+    height: 6%;
 }
 
-button{
-    background-color:#393e49;
-    color: #FFFFFF;
+button {
+    background-color: #393e49;
+    color: #ffffff;
     border-style: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* -------- MEDIAS QUERY ----------- */

@@ -30,10 +30,10 @@
             <h1>Generador de Memes</h1>
             </div>
             <div class="options">
-                <span><i class="fa-solid fa-image"></i>Imagen</span>
-                <span><i class="fa-solid fa-font"></i>Texto</span>
-                <span><i class="fa-solid fa-moon"></i> Modo obscuro</span>
-                <span><i class="fa-regular fa-sun"></i> Modo claro</span>
+                <button id="btn-img"><i class="fa-solid fa-image"></i>Imagen</button>
+                <button id="btn-txt"><i class="fa-solid fa-font"></i>Texto</button>
+                <button class="btn-obscuro"><i class="fa-solid fa-moon"></i> Modo obscuro</button>
+                <button id="btn-claro"><i class="fa-regular fa-sun"></i> Modo claro</button>
             </div>
         </div>
     </header>
@@ -43,10 +43,14 @@
 <!-- CUADRADO TOTAL, Q ADEMAS TIENE LAS CAJAS DE TEXTO, Y LO DEL MEDIO SERIA EL ESPACIO PARA LA IMAGEN -->
 
         <div class="recuadroPadre">
-            <p class="top-text" id="topText-meme">TOP TEXT</p>
+            <div class="top-text">
+                <p id="topText-meme">TOP TEXT</p>
+            </div>
             <div class="img-meme" id="img-meme"> 
             </div>
-            <p class="bottom-text" id="bottom-textMeme">BOTOM TEXT</p>
+            <div class="bottom-text">
+                <p id="bottom-textMeme">BOTOM TEXT</p>
+            </div>
         </div>
     
         <button class="botonDescarga">
@@ -55,14 +59,14 @@
 
     </main>
     
-<!-- ******************* ASIDE IMAGEN ******************* -->
+<!-- ########## ASIDE IMAGEN ########## -->
 
-    <aside>
-        <div class="asideImg">
+    <aside id="aside-Img">
+        <div class="aside-img">
             <h2>IMAGEN</h2>
             <div>
                 <h3>URL</h3>
-                <Input type="url" id="url-input"></Input>
+                <Input type="url" id="url-input">
             </div>
 
 <!--******* COLOR DE FONDO *******-->
@@ -146,9 +150,9 @@
         </div>
     </aside>
 
-<!-- ******************* ASIDE TEXT ******************* -->
+<!-- ############## ASIDE TEXT ############ -->
 
-    <aside>
+    <aside id="aside-Txt">
         <div class="asideTxt">
         <h2>TEXTO</h2>
 
@@ -156,7 +160,7 @@
         <div>
             <Input type="text"  placeholder="TOP TEXT" id="top-text"></Input>
             <div class="checkContainer">
-                <input type="checkbox">
+                <input type="checkbox" id="checkbox-txtSup">
                 <span>Sin texto superior</span> 
             </div>
         </div>
@@ -165,7 +169,7 @@
             <h3>INFERIOR</h3>
             <Input type="text" placeholder="BOTTOM TEXT" id="bottom-text"></Input>
             <div class="checkContainer">
-                <input type="checkbox">
+                <input type="checkbox" id="checkbox-txtInf">
                 <span>Sin texto inferior </span>
             </div>
         </div>
